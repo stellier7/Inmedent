@@ -42,8 +42,11 @@ const config = {
       city: "Tegucigalpa",
       state: "Francisco Morazán, Honduras",
       zip: "",
-      // Google Maps place_id for embed + directions
-      mapsQuery: "place_id:ChIJb1OaHX6jb48RvBOZOoTMBCU",
+      mapsCoords: { lat: 14.101004, lng: -87.1835602, zoom: 17 },
+      mapsPlaceRef: "0x8f6fa37e1d9a536f:0x2504cc843a9913bc",
+      mapsPlaceName: "INMEDENT",
+      mapsLink: "https://maps.app.goo.gl/PihA6SRo1XhStyot6",
+      mapsQuery: "",
     },
 
     hours: {
