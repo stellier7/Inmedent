@@ -72,10 +72,8 @@ const config = {
     accentColor: "",
     primaryDark: "",
     softBg: "",
-    // TODO: Add client logo — drop logo.png or logo.svg in /assets/images/ and set path here
-    logoUrl: "",
-    // TODO: Replace demo hero — drop hero.jpg in /assets/images/ and update path if renamed
-    heroImageUrl: "assets/images/hero.jpg",
+    logoUrl: "assets/images/Logo.jpeg",
+    heroImageUrl: "assets/images/Hero.jpeg",
   },
 
   // ---------------------------------------------------------------------------
@@ -242,8 +240,7 @@ const config = {
         en: "",
         es: "",
       },
-      // TODO: Replace with client photo — drop file in /assets/images/ and update path
-      photoUrl: "assets/images/dentist.jpg",
+      photoUrl: "assets/images/Dentist.jpeg",
     },
   ],
 
@@ -289,13 +286,13 @@ const config = {
   // ---------------------------------------------------------------------------
   // SMILE GALLERY
   // ---------------------------------------------------------------------------
-  // TODO: Replace demo gallery images — drop client photos in /assets/images/gallery/
   gallery: [
-    "assets/images/gallery/smile-01.jpg",
-    "assets/images/gallery/smile-02.jpg",
-    "assets/images/gallery/smile-03.jpg",
-    "assets/images/gallery/smile-04.jpg",
-    "assets/images/gallery/smile-05.jpg",
+    "assets/images/gallery/IMG_0356.jpeg",
+    "assets/images/gallery/IMG_0357.jpeg",
+    "assets/images/gallery/IMG_0361.jpeg",
+    "assets/images/gallery/IMG_0363.jpeg",
+    "assets/images/gallery/IMG_0364.jpeg",
+    "assets/images/gallery/IMG_0365.jpeg",
   ],
 
   // ---------------------------------------------------------------------------
