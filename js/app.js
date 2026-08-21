@@ -107,6 +107,8 @@
       metaDesc.setAttribute("content", description);
     }
 
+    applySiteMeta();
+
     renderBrand();
     renderNav();
     renderLangToggle();
@@ -129,6 +131,34 @@
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       el.textContent = t(el.getAttribute("data-i18n"));
     });
+  }
+
+  function applySiteMeta() {
+    const logoUrl = cfg.branding?.logoUrl;
+    if (!logoUrl) return;
+
+    const absoluteLogo = logoUrl.startsWith("http")
+      ? logoUrl
+      : `${window.location.origin}/${logoUrl.replace(/^\//, "")}`;
+
+    document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]').forEach((link) => {
+      link.setAttribute("href", logoUrl);
+      if (logoUrl.match(/\.jpe?g$/i)) link.setAttribute("type", "image/jpeg");
+      else if (logoUrl.match(/\.png$/i)) link.setAttribute("type", "image/png");
+      else if (logoUrl.match(/\.svg$/i)) link.setAttribute("type", "image/svg+xml");
+    });
+
+    const ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage) ogImage.setAttribute("content", absoluteLogo);
+
+    const ogImageAlt = document.querySelector('meta[property="og:image:alt"]');
+    if (ogImageAlt) ogImageAlt.setAttribute("content", `${cfg.practice.name} logo`);
+
+    const twitterImage = document.querySelector('meta[name="twitter:image"]');
+    if (twitterImage) twitterImage.setAttribute("content", absoluteLogo);
+
+    const twitterImageAlt = document.querySelector('meta[name="twitter:image:alt"]');
+    if (twitterImageAlt) twitterImageAlt.setAttribute("content", `${cfg.practice.name} logo`);
   }
 
   // -------------------------------------------------------------------------
