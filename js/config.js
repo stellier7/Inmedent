@@ -234,14 +234,40 @@ const config = {
   // ---------------------------------------------------------------------------
   dentists: [
     {
+      name: "Dra. Andrea",
+      title: {
+        en: "General Dentistry",
+        es: "Odontología General",
+      },
+      bio: {
+        en: "At INMEDENT we believe a smile can change everything — and Dr. Andrea proves it every day through her work. With more than 7 years of experience, her approach goes beyond dentistry: she cares for the health, self-esteem, and well-being of every patient she treats.",
+        es: "En INMEDENT creemos que una sonrisa puede cambiarlo todo, y la doctora Andrea lo demuestra cada día con su trabajo. Con más de 7 años de experiencia, su enfoque va más allá de la odontología: cuida la salud, la autoestima y el bienestar de cada persona que atiende.",
+      },
+      // TODO: Add photo — drop andrea.jpeg in /assets/images/dentists/
+      photoUrl: "assets/images/dentists/andrea.jpeg",
+    },
+    {
+      name: "Dra. Grecia",
+      title: {
+        en: "General Dentistry · Dental Veneers",
+        es: "Odontología General · Carillas Dentales",
+      },
+      bio: {
+        en: "Meet Dr. Grecia at INMEDENT — a dentistry graduate from Universidad Autónoma (2019) with a diploma in dental veneers. Her mission: transform smiles and restore every patient's confidence to show theirs.",
+        es: "En INMEDENT le presentamos a la Dra. Grecia, graduada de la Universidad Autónoma en 2019 de odontología y con diplomado en carillas dentales. Su misión: transformar sonrisas y devolverle a cada paciente la confianza de sonreír.",
+      },
+      // TODO: Add photo — drop grecia.jpeg in /assets/images/dentists/
+      photoUrl: "assets/images/dentists/grecia.jpeg",
+    },
+    {
       name: "Dra. Milicen Murillo",
       title: {
         en: "General Dentistry",
         es: "Odontología General",
       },
       bio: {
-        en: "",
-        es: "",
+        en: "Dr. Milicen Murillo provides comprehensive dental care with a warm, professional approach — helping every patient maintain a healthy, confident smile.",
+        es: "La Dra. Milicen Murillo ofrece atención odontológica integral con un trato cercano y profesional, ayudando a cada paciente a mantener una sonrisa sana y confiada.",
       },
       photoUrl: "assets/images/Dentist.jpeg",
     },
