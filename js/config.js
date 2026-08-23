@@ -236,8 +236,8 @@ const config = {
     {
       name: "Dra. Andrea",
       title: {
-        en: "General Dentistry",
-        es: "Odontología General",
+        en: "Dental Surgery",
+        es: "Cirugía Dental",
       },
       bio: {
         en: "At INMEDENT we believe a smile can change everything — and Dr. Andrea proves it every day through her work. With more than 7 years of experience, her approach goes beyond dentistry: she cares for the health, self-esteem, and well-being of every patient she treats.",
@@ -249,8 +249,8 @@ const config = {
     {
       name: "Dra. Grecia",
       title: {
-        en: "General Dentistry · Dental Veneers",
-        es: "Odontología General · Carillas Dentales",
+        en: "Dental Surgery · Dental Veneers",
+        es: "Cirugía Dental · Carillas Dentales",
       },
       bio: {
         en: "Meet Dr. Grecia at INMEDENT — a dentistry graduate from Universidad Autónoma (2019) with a diploma in dental veneers. Her mission: transform smiles and restore every patient's confidence to show theirs.",
