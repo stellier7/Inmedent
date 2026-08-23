@@ -280,10 +280,82 @@ const config = {
     {
       name: { en: "General Dentistry", es: "Odontología General" },
       description: {
-        en: "Preventive exams, cleanings, fillings, and everyday care to keep your whole family's smiles healthy.",
-        es: "Exámenes preventivos, limpiezas, resinas y cuidado diario para mantener sonrisas sanas en toda la familia.",
+        en: "Comprehensive exams, fillings, restorations, and everyday care to keep your smile healthy — for the whole family.",
+        es: "Exámenes integrales, resinas, restauraciones y cuidado diario para mantener tu sonrisa sana — para toda la familia.",
       },
       icon: "general",
+    },
+    {
+      name: { en: "Dental Cleaning", es: "Limpieza Dental" },
+      description: {
+        en: "Professional prophylaxis to remove plaque and tartar, polish teeth, and protect gums — the foundation of a healthy smile.",
+        es: "Profilaxis profesional para eliminar placa y sarro, pulir los dientes y proteger las encías — la base de una sonrisa sana.",
+      },
+      icon: "cleaning",
+    },
+    {
+      name: { en: "Teeth Whitening", es: "Blanqueamiento Dental" },
+      description: {
+        en: "Professional whitening for a brighter, natural-looking smile — safe results you can notice from the first visits.",
+        es: "Blanqueamiento profesional para una sonrisa más luminosa y natural — resultados seguros visibles desde las primeras visitas.",
+      },
+      icon: "whitening",
+    },
+    {
+      name: { en: "Dental Veneers", es: "Carillas Dentales" },
+      description: {
+        en: "Custom veneers to correct shape, color, and minor alignment issues — designed for a harmonious, confident smile.",
+        es: "Carillas personalizadas para corregir forma, color y pequeñas imperfecciones — diseñadas para una sonrisa armónica y segura.",
+      },
+      icon: "cosmetic",
+    },
+    {
+      name: { en: "Braces & Orthodontics", es: "Brackets y Ortodoncia" },
+      description: {
+        en: "Traditional braces (frenillos) to straighten teeth and correct bite issues — personalized plans for children and adults.",
+        es: "Brackets (frenillos) para enderezar dientes y corregir la mordida — planes personalizados para niños y adultos.",
+      },
+      icon: "aligners",
+    },
+    {
+      name: { en: "Clear Aligners", es: "Alineamiento de Sonrisa" },
+      description: {
+        en: "Discreet clear aligners that straighten your smile without metal brackets — removable, comfortable, and easy to maintain.",
+        es: "Alineadores transparentes que enderezan tu sonrisa sin brackets metálicos — removibles, cómodos y fáciles de cuidar.",
+      },
+      icon: "aligners",
+    },
+    {
+      name: { en: "Root Canal Therapy", es: "Endodoncia" },
+      description: {
+        en: "Root canal treatment to save infected or damaged teeth, relieve pain, and preserve your natural smile whenever possible.",
+        es: "Tratamiento de conducto para salvar dientes infectados o dañados, aliviar el dolor y preservar tu sonrisa natural siempre que sea posible.",
+      },
+      icon: "cleaning",
+    },
+    {
+      name: { en: "Extractions & Wisdom Teeth", es: "Extracciones y Muelas del Juicio" },
+      description: {
+        en: "Simple and surgical extractions, including impacted wisdom teeth — gentle care to relieve pain and prevent future complications.",
+        es: "Extracciones simples y quirúrgicas, incluidas muelas del juicio impactadas — atención cuidadosa para aliviar el dolor y prevenir complicaciones.",
+      },
+      icon: "emergency",
+    },
+    {
+      name: { en: "Dental Implants", es: "Implantes Dentales" },
+      description: {
+        en: "Titanium implants to replace missing teeth with durable, natural-looking results — restoring function and confidence long-term.",
+        es: "Implantes de titanio para reemplazar dientes perdidos con resultados duraderos y naturales — recuperando función y confianza a largo plazo.",
+      },
+      icon: "implants",
+    },
+    {
+      name: { en: "Oral Surgery", es: "Cirugía Oral" },
+      description: {
+        en: "Surgical care for cysts, biopsies, gum procedures, apicoectomies, and complex cases — precise treatment with clear follow-up.",
+        es: "Atención quirúrgica para quistes, biopsias, cirugía de encías, apicectomías y casos complejos — tratamiento preciso con seguimiento claro.",
+      },
+      icon: "implants",
     },
   ],
 
