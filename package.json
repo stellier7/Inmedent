@@ -1,24 +1,21 @@
 {
-  "name": "workspace",
+  "name": "inmedent",
   "version": "1.0.0",
-  "description": "Mobile-first, bilingual (ES/EN) dental practice site built with plain HTML, CSS, and vanilla JavaScript. All client-specific content lives in a single config file — swap the data, drop in images, and deploy.",
-  "main": "test-animations-live.js",
+  "description": "Inmedent dental practice website — static HTML/CSS/JS site with config-driven content.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:carousels-embla": "esbuild js/carousels-embla.mjs --bundle --format=iife --global-name=CarouselsEmbla --outfile=js/carousels-embla.bundle.js",
+    "build:dentists-embla": "npm run build:carousels-embla"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stellier7/dentist-template.git"
+    "url": "git+https://github.com/stellier7/Inmedent.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/stellier7/dentist-template/issues"
-  },
-  "homepage": "https://github.com/stellier7/dentist-template#readme",
   "devDependencies": {
-    "playwright": "^1.62.0",
-    "puppeteer-core": "^25.4.0"
+    "esbuild": "^0.28.2"
+  },
+  "dependencies": {
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-autoplay": "^8.6.0"
   }
 }
