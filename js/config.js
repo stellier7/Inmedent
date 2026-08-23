@@ -329,7 +329,7 @@ const config = {
   // ---------------------------------------------------------------------------
   socials: {
     instagram: "https://www.instagram.com/medicadental.hn",
-    facebook: "",
+    facebook: "https://www.facebook.com/p/Inmedent-61551104184294/",
   },
 };
 
