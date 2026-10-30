@@ -124,6 +124,7 @@
     renderFinancing();
     renderLocation();
     renderFooter();
+    renderWhatsAppFloat();
     renderStickyBar();
     applyStaticI18n();
     updateGalleryLightboxLabels();
@@ -229,16 +230,34 @@
   }
 
   function whatsappHref(message = "") {
-    const digits = (cfg.practice.phoneTel || cfg.practice.phone || "").replace(/\D/g, "");
+    let digits = (cfg.practice.phoneTel || cfg.practice.phone || "").replace(/\D/g, "");
     if (!digits) return "#";
-    
-    // WhatsApp link format: https://wa.me/1234567890?text=Message
-    const baseUrl = `https://wa.me/1${digits}`;
-    if (message) {
-      const encodedMessage = encodeURIComponent(message);
-      return `${baseUrl}?text=${encodedMessage}`;
+    // A bare 10-digit number is treated as NANP. Numbers that already include
+    // a country code (this practice stores 504…) are used as-is.
+    if (digits.length === 10) digits = `1${digits}`;
+
+    const baseUrl = `https://wa.me/${digits}`;
+    if (!message) return baseUrl;
+    return `${baseUrl}?text=${encodeURIComponent(message)}`;
+  }
+
+  function renderWhatsAppFloat() {
+    const link = document.querySelector("[data-whatsapp-float]");
+    if (!link) return;
+
+    const digits = (cfg.practice.phoneTel || cfg.practice.phone || "").replace(/\D/g, "");
+    if (!digits) {
+      link.hidden = true;
+      return;
     }
-    return baseUrl;
+
+    const label = t("whatsapp.label");
+    link.hidden = false;
+    link.href = whatsappHref(t("whatsapp.message"));
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.setAttribute("aria-label", label);
+    link.title = label;
   }
 
   function renderBookCTAs() {
@@ -1381,7 +1400,7 @@
         </div>
         <p class="site-footer__credit">
           ${escapeHtml(t("footer.developedBy"))}
-          <a href="https://iagodigital.vercel.app" target="_blank" rel="noopener">IAGO Digital</a>
+          <a href="https://www.iagodigital.com" target="_blank" rel="noopener noreferrer">IAGO Digital</a>
         </p>
       </div>`;
   }

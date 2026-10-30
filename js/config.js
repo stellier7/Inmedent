@@ -142,6 +142,10 @@ const config = {
       stickyBar: {
         cta: "Book Appointment",
       },
+      whatsapp: {
+        label: "Chat on WhatsApp",
+        message: "Hello, I have a question",
+      },
       footer: {
         contact: "Contact",
         hours: "Hours",
@@ -213,6 +217,10 @@ const config = {
       },
       stickyBar: {
         cta: "Agendar Cita",
+      },
+      whatsapp: {
+        label: "Escríbenos por WhatsApp",
+        message: "Hola, tengo una pregunta",
       },
       footer: {
         contact: "Contacto",
